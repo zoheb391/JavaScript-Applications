@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Imdb Movie Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="style.css"/>
+	<script src = "https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  			crossorigin="anonymous"> </script>
+  	<script src="imdb.js"></script>
+</head>
+<body>
+
+	<div class = "container">
+		Find a Movie
+	</div>
+	<div class = "search-box">
+		<input type = "text"  placeholder= "search movie title" id = "movieTitle" class = " col-xs-12 col-lg-1 form-control"> </input>
+		<button id = "searchMovie" class = 'btn btn-primary btn-block'> Search </button>
+	</div>
+	<br />
+
+	<div class = result-box>
+		<h2> Results </h2><br />
+		<table class = "table table-striped">
+			<thead>
+				<tr>
+					<th> Title </th>
+					<th> Overview </th>
+					<th> Avg.Rating </th>
+					<th> Release </th>
+					<th class = 'poster-field'>  </th>
+				</tr>
+			</thead>
+			<tbody class = "searchBody">
+				<!-- <tr>
+					<td> </td>
+					<td> </td>
+					<td> <img src ="" /> </td>
+				</tr> -->
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

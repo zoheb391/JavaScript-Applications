@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+
+body {
+  /*background-color: #F0F0F0;*/
+  background-color: #0D1B1E;
+  padding: 20px;
+}
+.search-box {
+  margin:50px;
+  margin-top: 10px;
+  color: #8FB996;
+}
+.result-box {
+  display: none;
+  margin: 50px;
+}
+.result-box h3{
+  /*font-family: 'Bungee Shade', cursive;*/
+  font-family: 'Orbitron', sans-serif;
+}
+.table {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  background: white;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container {
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Bungee Shade', cursive;
+  letter-spacing: 3px;
+  color: #8FB996;
+  /*margin-top: 20px;*/
+}
+.discover-box {
+  padding: 50px;
+}
+
+td.img-field {
+  display: flex;
+  justify-content: flex-end;
+}
+.actor-search-box {
+  margin-left: 30px;
+}
+
+.bio-box {
+  margin: 75px;
+}
+.jumbotron {
+  margin:50px;
+  display: flex;
+  background-color: #E6EFE9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.vertical {
+  border-left: 0.5px solid;
+  width: 0px;
+  height: 550px;
+}
+
+
+#searchActor {
+  margin-top: 5px;
+}
+.actor-attributes {
+  flex:1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.actor-info {
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.actor-bio {
+  flex:3;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+#actorHeader {
+  font-size: 40px;
+  text-align: center;
+}
+#bioPara{
+  line-height: 150%;
+  margin-left: 50px;
+  font-size: 18px;
+  color: #0D1B1E;
+}
+#actorImgBox {
+  padding-top: 10px;
+}
+#birthdayHeader {
+  font-style: inherit;
+  font-size: 15px;
+}
+#genderBox {
+  margin-top: 15px;
+}

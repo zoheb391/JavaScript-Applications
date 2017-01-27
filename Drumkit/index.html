@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> My DrumKit </title>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+  <div class = "keys">
+    
+    <div data-key = "65" class = "key">
+      A
+    </div>
+    <div data-key = "83" class = "key">
+      S
+    </div>
+    <div data-key = "68" class = "key">
+      D
+    </div>
+    <div data-key = "70" class = "key">
+      F
+    </div>
+    <div data-key = "71" class = "key">
+      G
+    </div>
+    <div data-key = "72" class = "key">
+      H
+    </div>
+    <div data-key = "74" class = "key">
+      J
+    </div>
+    <div data-key = "75" class = "key">
+      K
+    </div><div data-key = "76" class = "key">
+      L
+    </div>
+  
+  </div>
+  
+  <audio data-key ="65" src = "sounds/clap-808.wav"></audio>
+  <audio data-key ="83" src = "sounds/kick-heavy.wav"></audio>
+  <audio data-key ="68" src = "sounds/openhat-slick.wav"></audio>
+  <audio data-key ="70" src = "sounds/shaker-shuffle.wav"></audio>
+  <audio data-key ="71" src = "sounds/snare-electro.wav"></audio>
+  <audio data-key ="72" src = "sounds/perc-nasty.wav"></audio>
+  <audio data-key ="74" src = "sounds/kick-vinyl02.wav"></audio>
+  <audio data-key ="75" src = "sounds/tom-fm.wav"></audio>
+  <audio data-key ="76" src = "sounds/snare-punch.wav"></audio>
+
+</body>
+
+<script>
+
+  function removeTransition (e) {
+    if (e.propertyName != 'transform') return;
+    this.classList.remove('playing');
+  }
+
+  function playSound (e) {
+    const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+    
+    if(!audio) return ;
+    audio.currentTime = 0;
+    audio.play();
+    key.classList.add("playing");
+    console.log(key);
+  };
+  
+   
+
+  const keys = document.querySelectorAll('.key');
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  window.addEventListener('keydown', playSound);
+
+</script>
+
+</html>
